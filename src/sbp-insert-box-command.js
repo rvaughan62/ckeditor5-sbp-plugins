@@ -5,7 +5,12 @@ export default class InsertSbpRecommendationBoxCommand extends Command {
 		this.editor.model.change( writer => {
 			// Insert <sbpRecommendationBox>*</sbpRecommendationBox> at the current selection position
 			// in a way that will result in creating a valid model structure.
-			this.editor.model.insertContent( createSbpRecommendationBox( writer ) );
+			const elem = createSbpRecommendationBox( writer );
+			this.editor.model.insertContent( elem );
+
+            if ( elem.parent ) {
+                writer.setSelection( elem, 'in' );
+            }
 		} );
 	}
 
