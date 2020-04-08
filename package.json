@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-sbp-plugins",
+  "name": "ckeditor5-sbp-plugins",
   "version": "1.0.0",
   "description": "SBP features for CKEditor 5.",
   "keywords": [
