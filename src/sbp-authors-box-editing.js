@@ -1,7 +1,7 @@
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import { toWidget, toWidgetEditable } from '@ckeditor/ckeditor5-widget/src/utils';
 import Widget from '@ckeditor/ckeditor5-widget/src/widget';
-import InsertSbpAuthorsNoteBoxCommand from './sbp-insert-author-box-command';
+import InsertSbpAuthorsNoteBoxCommand from './sbp-insert-authors-box-command';
 
 export default class SbpAuthorsNoteBoxEditing extends Plugin {
 	static get requires() {
